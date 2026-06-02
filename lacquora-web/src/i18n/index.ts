@@ -26,7 +26,7 @@ export const i18n = createI18n({
 })
 
 export function setLocale(locale: Locale) {
-  i18n.global.locale.value = locale
+  ;(i18n.global.locale as { value: string }).value = locale
   localStorage.setItem('lacquora_locale', locale)
   document.documentElement.lang = locale
 }
