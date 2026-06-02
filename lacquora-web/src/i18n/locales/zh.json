@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "collections": "系列作品",
+    "customShop": "定制工坊",
+    "gallery": "作品画廊",
+    "craftsmanship": "工艺",
+    "journal": "日志",
+    "about": "关于",
+    "contact": "联系我们",
+    "bookConsultation": "预约咨询"
+  },
+  "home": {
+    "heroTagline": "东方传统工艺\n邂逅未来吉他设计",
+    "heroSubtitle": "东方传承 · 数字精密 · 活的艺术",
+    "heroCta1": "探索系列",
+    "heroCta2": "开始定制",
+    "collectionsTitle": "系列作品",
+    "collectionsSubtitle": "三大系列，一种哲学",
+    "lacquerSeries": "漆艺系列",
+    "lacquerDesc": "中国传统大漆工艺，在现代电吉他上重生。",
+    "futureSeries": "未来系列",
+    "futureDesc": "3D打印参数化设计，挑战制琴工艺的边界。",
+    "masterBuild": "大师定制",
+    "masterDesc": "收藏级定制作品，每一把都是唯一。",
+    "craftTitle": "工艺流程",
+    "craftSubtitle": "从概念到收藏品。",
+    "galleryTitle": "精选作品",
+    "storiesTitle": "艺术家故事",
+    "ctaTitle": "委托制作您的乐器",
+    "ctaSubtitle": "每一把漆境吉他，都始于一次对话。",
+    "ctaButton": "开始这个过程"
+  },
+  "collections": {
+    "title": "系列作品",
+    "lacquerSeries": {
+      "title": "漆艺系列",
+      "subtitle": "大漆 · 戗金 · 螺钿 · 莳绘",
+      "desc": "数百年中国漆艺传统，融入电吉他之中。"
+    },
+    "futureSeries": {
+      "title": "未来系列",
+      "subtitle": "参数化 · 轻量化 · 未来主义",
+      "desc": "3D打印电吉他，挑战乐器的定义。"
+    },
+    "masterBuild": {
+      "title": "大师定制",
+      "subtitle": "孤品 · 委托制作 · 收藏级",
+      "desc": "漆境工艺的最高表达。"
+    }
+  },
+  "customShop": {
+    "title": "定制工坊",
+    "subtitle": "设计您的乐器，我们完成余下的一切。",
+    "step1": { "title": "琴体形状", "subtitle": "选择您的轮廓" },
+    "step2": { "title": "木材选择", "subtitle": "选择您的材料" },
+    "step3": { "title": "工艺与表面处理", "subtitle": "选择您的工艺" },
+    "step4": { "title": "硬件配置", "subtitle": "配置您的组件" },
+    "step5": { "title": "参考图片", "subtitle": "分享您的构想" },
+    "step6": { "title": "确认并提交", "subtitle": "确认您的规格" },
+    "back": "上一步",
+    "continue": "下一步",
+    "submit": "提交询盘",
+    "submitting": "提交中…",
+    "successTitle": "您的询盘已收到。",
+    "successDesc": "我们将在3个工作日内审核您的规格并回复。"
+  },
+  "craftsmanship": {
+    "title": "工艺",
+    "subtitle": "每一个细节，皆有深意。",
+    "lacquerArt": "漆艺",
+    "lutherie": "制琴工艺"
+  },
+  "gallery": {
+    "title": "作品画廊",
+    "all": "全部",
+    "lacquer": "漆艺",
+    "future": "未来",
+    "master": "大师",
+    "lifestyle": "生活方式"
+  },
+  "journal": {
+    "title": "日志",
+    "categories": {
+      "guitar_knowledge": "吉他知识",
+      "lacquer_art": "漆艺",
+      "3d_printing": "3D打印",
+      "artist_stories": "艺术家故事",
+      "brand_news": "品牌新闻"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "每一把乐器，都始于一次对话。",
+    "name": "姓名",
+    "email": "电子邮件",
+    "phone": "电话（选填）",
+    "country": "国家/地区",
+    "message": "请介绍您的项目",
+    "type": "询盘类型",
+    "types": {
+      "general": "一般咨询",
+      "custom": "定制吉他",
+      "enterprise": "企业/礼品定制",
+      "press": "媒体与公关"
+    },
+    "submit": "发送消息",
+    "successTitle": "消息已收到。",
+    "successDesc": "我们将在2个工作日内与您联系。"
+  },
+  "footer": {
+    "tagline": "漆境 · 传统与未来的交汇",
+    "collections": "系列作品",
+    "company": "公司",
+    "legal": "法律",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "copyright": "© {year} 漆境 LACQUORA. 版权所有。"
+  },
+  "common": {
+    "loading": "加载中…",
+    "error": "出现错误，请重试。",
+    "learnMore": "了解更多",
+    "viewAll": "查看全部",
+    "close": "关闭",
+    "required": "必填"
+  }
+}

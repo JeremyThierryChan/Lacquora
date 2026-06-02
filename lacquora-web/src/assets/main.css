@@ -1,0 +1,332 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Custom Properties ─── */
+:root {
+  --color-obsidian:    #0A0A0A;
+  --color-graphite:    #141414;
+  --color-carbon:      #1A1A1A;
+  --color-slate:       #2C2C2C;
+  --color-ash:         #4A4A4A;
+  --color-smoke:       #6E6E6E;
+  --color-silver:      #ACACAC;
+  --color-ivory:       #F5F0EB;
+  --color-gold:        #C9A84C;
+  --color-gold-light:  #E2C97E;
+  --color-gold-dim:    #8B6E2E;
+  --color-lacquer:     #8B1A1A;
+  --color-lacquer-lt:  #B22222;
+
+  --nav-height:        72px;
+  --transition-luxury: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --transition-expo:   cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* ─── Base Layer ─── */
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-obsidian);
+    color: var(--color-ivory);
+    font-family: 'Inter', 'Noto Sans SC', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: rgba(201, 168, 76, 0.25);
+    color: var(--color-gold-light);
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-obsidian);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-ash);
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gold-dim);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', 'Noto Serif SC', serif;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+  }
+
+  input, textarea, select {
+    font-family: inherit;
+  }
+}
+
+/* ─── Component Layer ─── */
+@layer components {
+
+  /* ── Typography ── */
+  .type-display {
+    font-family: 'Cormorant Garamond', 'Noto Serif SC', serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+  }
+
+  .type-hero {
+    font-family: 'Cormorant Garamond', 'Noto Serif SC', serif;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+  }
+
+  .type-section-title {
+    font-family: 'Cormorant Garamond', 'Noto Serif SC', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  .type-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6875rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .type-label-zh {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    font-weight: 300;
+  }
+
+  /* ── Gold Divider ── */
+  .gold-line {
+    display: block;
+    width: 48px;
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-gold), transparent);
+  }
+
+  .gold-line-center {
+    display: block;
+    width: 48px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+    margin: 0 auto;
+  }
+
+  /* ── Buttons ── */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-3
+           px-8 py-4
+           bg-transparent
+           border border-gold
+           text-gold
+           type-label
+           tracking-widest
+           transition-all duration-400
+           hover:bg-gold hover:text-obsidian
+           active:scale-[0.98];
+    transition-timing-function: var(--transition-luxury);
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-3
+           px-8 py-4
+           bg-transparent
+           border border-silver/30
+           text-silver
+           type-label
+           tracking-widest
+           transition-all duration-400
+           hover:border-ivory hover:text-ivory
+           active:scale-[0.98];
+    transition-timing-function: var(--transition-luxury);
+  }
+
+  .btn-text {
+    @apply inline-flex items-center gap-2
+           text-gold type-label tracking-widest
+           transition-all duration-300
+           hover:gap-4;
+  }
+
+  /* ── Cards ── */
+  .card-product {
+    @apply relative overflow-hidden bg-carbon
+           border border-slate/50
+           transition-all duration-600
+           hover:border-gold/30;
+    transition-timing-function: var(--transition-luxury);
+  }
+
+  .card-product:hover .card-image-inner {
+    transform: scale(1.04);
+  }
+
+  .card-image-inner {
+    @apply transition-transform duration-800;
+    transition-timing-function: var(--transition-expo);
+  }
+
+  /* ── Section Spacing ── */
+  .section-padding {
+    @apply py-24 md:py-32 lg:py-40;
+  }
+
+  .section-padding-sm {
+    @apply py-16 md:py-24;
+  }
+
+  .container-site {
+    @apply mx-auto px-6 md:px-10 lg:px-16;
+    max-width: 1440px;
+  }
+
+  .container-content {
+    @apply mx-auto px-6 md:px-10 lg:px-16;
+    max-width: 1200px;
+  }
+
+  /* ── Nav ── */
+  .nav-link {
+    @apply type-label tracking-widest text-silver/70
+           transition-colors duration-300
+           hover:text-ivory
+           relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 w-0 h-px bg-gold
+           transition-all duration-300;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.router-link-active::after {
+    @apply w-full;
+  }
+
+  .nav-link.router-link-active {
+    @apply text-ivory;
+  }
+
+  /* ── Form Fields ── */
+  .field-base {
+    @apply w-full bg-carbon border border-slate/60 text-ivory
+           px-4 py-3.5 text-body-md
+           placeholder-smoke/50
+           focus:outline-none focus:border-gold/60
+           transition-colors duration-300;
+  }
+
+  .field-label {
+    @apply type-label tracking-widest text-silver/60 mb-2 block;
+  }
+
+  /* ── Overlay ── */
+  .overlay-dark {
+    @apply absolute inset-0 bg-obsidian/60;
+  }
+
+  .overlay-gradient-bottom {
+    @apply absolute inset-0;
+    background: linear-gradient(to bottom, transparent 40%, var(--color-obsidian) 100%);
+  }
+
+  /* ── Skeleton Loader ── */
+  .skeleton {
+    @apply bg-carbon relative overflow-hidden;
+  }
+  .skeleton::after {
+    content: '';
+    @apply absolute inset-0;
+    background: linear-gradient(
+      90deg,
+      transparent 25%,
+      rgba(255,255,255,0.04) 50%,
+      transparent 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.8s infinite;
+  }
+}
+
+/* ─── Utility Layer ─── */
+@layer utilities {
+
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #C9A84C 0%, #E2C97E 50%, #C9A84C 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .border-gold-gradient {
+    border-image: linear-gradient(135deg, #C9A84C, #E2C97E, #C9A84C) 1;
+  }
+
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Page transition classes */
+  .page-enter-active,
+  .page-leave-active {
+    transition: opacity 0.5s var(--transition-luxury),
+                transform 0.5s var(--transition-luxury);
+  }
+  .page-enter-from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  .page-leave-to {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}

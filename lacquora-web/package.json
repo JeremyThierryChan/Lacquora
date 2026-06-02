@@ -1,0 +1,46 @@
+{
+  "name": "lacquora-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.ts,.tsx --fix",
+    "format": "prettier --write \"src/**/*.{vue,ts,tsx,css,json}\""
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "vue-router": "^4.3.0",
+    "pinia": "^2.1.7",
+    "vue-i18n": "^9.9.0",
+    "axios": "^1.7.0",
+    "@vueuse/core": "^10.9.0",
+    "gsap": "^3.12.5",
+    "swiper": "^11.1.0",
+    "vue-masonry-css": "^1.0.3",
+    "yet-another-react-lightbox": "^3.0.0",
+    "v-lazy-image": "^2.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6",
+    "typescript": "^5.4.0",
+    "tailwindcss": "^3.4.3",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "@tailwindcss/typography": "^0.5.13",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "eslint-plugin-vue": "^9.25.0",
+    "prettier": "^3.2.5",
+    "unplugin-auto-import": "^0.17.6",
+    "unplugin-vue-components": "^0.26.0",
+    "vite-plugin-sitemap": "^0.6.1"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "collections": "Collections",
+    "customShop": "Custom Shop",
+    "gallery": "Gallery",
+    "craftsmanship": "Craftsmanship",
+    "journal": "Journal",
+    "about": "About",
+    "contact": "Contact",
+    "bookConsultation": "Book a Consultation"
+  },
+  "home": {
+    "heroTagline": "Where Traditional Lacquer\nMeets Future Guitar Design",
+    "heroSubtitle": "Eastern Heritage · Digital Precision · Living Art",
+    "heroCta1": "Explore Collections",
+    "heroCta2": "Start Customizing",
+    "collectionsTitle": "Our Collections",
+    "collectionsSubtitle": "Three series. One philosophy.",
+    "lacquerSeries": "Lacquer Series",
+    "lacquerDesc": "Ancient Chinese lacquer art reborn on the body of a modern electric guitar.",
+    "futureSeries": "Future Series",
+    "futureDesc": "3D-printed parametric designs pushing the boundaries of lutherie.",
+    "masterBuild": "Master Build",
+    "masterDesc": "Collector-grade commissions. One-off instruments made to outlast their players.",
+    "craftTitle": "The Process",
+    "craftSubtitle": "From concept to collector's piece.",
+    "galleryTitle": "Selected Works",
+    "storiesTitle": "Artist Stories",
+    "ctaTitle": "Commission Your Instrument",
+    "ctaSubtitle": "Every LACQUORA guitar begins with a conversation.",
+    "ctaButton": "Begin the Process"
+  },
+  "collections": {
+    "title": "Collections",
+    "lacquerSeries": {
+      "title": "Lacquer Series",
+      "subtitle": "Urushi · Qian Jin · Mother of Pearl · Maki-e",
+      "desc": "Centuries of Chinese lacquer tradition, applied to the electric guitar."
+    },
+    "futureSeries": {
+      "title": "Future Series",
+      "subtitle": "Parametric · Lightweight · Futurist",
+      "desc": "3D-printed guitars that challenge what an instrument can be."
+    },
+    "masterBuild": {
+      "title": "Master Build",
+      "subtitle": "One-Off · Commission · Collector",
+      "desc": "The highest expression of the LACQUORA craft."
+    }
+  },
+  "customShop": {
+    "title": "Custom Shop",
+    "subtitle": "Design your instrument. We build the rest.",
+    "step1": { "title": "Body Shape", "subtitle": "Choose your silhouette" },
+    "step2": { "title": "Tonewoods", "subtitle": "Choose your materials" },
+    "step3": { "title": "Craft & Finish", "subtitle": "Choose your artistry" },
+    "step4": { "title": "Hardware", "subtitle": "Configure your components" },
+    "step5": { "title": "References", "subtitle": "Share your vision" },
+    "step6": { "title": "Review & Submit", "subtitle": "Confirm your specification" },
+    "back": "Back",
+    "continue": "Continue",
+    "submit": "Submit Inquiry",
+    "submitting": "Submitting…",
+    "successTitle": "Your inquiry has been received.",
+    "successDesc": "We will review your specification and respond within 3 business days."
+  },
+  "craftsmanship": {
+    "title": "Craftsmanship",
+    "subtitle": "Every detail, deliberate.",
+    "lacquerArt": "Lacquer Art",
+    "lutherie": "Lutherie"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "all": "All Works",
+    "lacquer": "Lacquer",
+    "future": "Future",
+    "master": "Master",
+    "lifestyle": "Lifestyle"
+  },
+  "journal": {
+    "title": "Journal",
+    "categories": {
+      "guitar_knowledge": "Guitar Knowledge",
+      "lacquer_art": "Lacquer Art",
+      "3d_printing": "3D Printing",
+      "artist_stories": "Artist Stories",
+      "brand_news": "Brand News"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Every instrument begins with a conversation.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone (optional)",
+    "country": "Country",
+    "message": "Tell us about your project",
+    "type": "Inquiry Type",
+    "types": {
+      "general": "General Inquiry",
+      "custom": "Custom Guitar",
+      "enterprise": "Corporate / Gift",
+      "press": "Press & Media"
+    },
+    "submit": "Send Message",
+    "successTitle": "Message received.",
+    "successDesc": "We'll be in touch within 2 business days."
+  },
+  "footer": {
+    "tagline": "漆境 · Where Tradition Meets Future",
+    "collections": "Collections",
+    "company": "Company",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
+    "copyright": "© {year} LACQUORA. All rights reserved."
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong. Please try again.",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "close": "Close",
+    "required": "Required"
+  }
+}
