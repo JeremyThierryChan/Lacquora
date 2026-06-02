@@ -28,7 +28,19 @@
     "storiesTitle": "Artist Stories",
     "ctaTitle": "Commission Your Instrument",
     "ctaSubtitle": "Every LACQUORA guitar begins with a conversation.",
-    "ctaButton": "Begin the Process"
+    "ctaButton": "Begin the Process",
+    "customShopStripTitle": "Your vision.\nOur craft.",
+    "customShopStripDesc": "Six steps. One instrument. Entirely yours.",
+    "customShopStripCta": "Begin Customizing",
+    "explore": "Explore",
+    "fullProcess": "Full Process",
+    "viewAllWorks": "View All Works",
+    "craftStep01Desc": "Concept, blueprint, 3D model",
+    "craftStep02Desc": "Tonewood selection & lacquer sourcing",
+    "craftStep03Desc": "CNC precision + hand shaping",
+    "craftStep04Desc": "50–100 layers over weeks",
+    "craftStep05Desc": "Intonation, action, electronics",
+    "craftStep06Desc": "Handover with certificate of provenance"
   },
   "collections": {
     "title": "Collections",
@@ -68,7 +80,95 @@
     "title": "Craftsmanship",
     "subtitle": "Every detail, deliberate.",
     "lacquerArt": "Lacquer Art",
-    "lutherie": "Lutherie"
+    "lutherie": "Lutherie",
+    "intro": {
+      "heading": "Two disciplines, one instrument.",
+      "p1": "Every LACQUORA guitar is the product of two parallel bodies of knowledge: the centuries-old craft of Chinese lacquer art, and the precision discipline of electric guitar lutherie. Neither is subordinate to the other. Both must be mastered.",
+      "p2": "The lacquer work and the woodwork proceed alongside each other — each informing the tolerances, the weight targets, and the surface geometry of the final instrument. A guitar finished in 80 layers of urushi cannot be an afterthought; it must be designed for that finish from the first sketch."
+    },
+    "stats": {
+      "layers": "Avg. Lacquer Layers",
+      "buildTime": "Max Build Time",
+      "luthiers": "Luthiers on Staff",
+      "perYear": "Works per Year"
+    },
+    "partI": "Part I",
+    "partII": "Part II",
+    "processLabel": "Process",
+    "timeLabel": "Time",
+    "cta": {
+      "title": "Commission a built-to-standard instrument.",
+      "subtitle": "Every process on this page is available in our Custom Shop.",
+      "button": "Open Custom Shop"
+    },
+    "techniques": {
+      "urushi": {
+        "desc": "Pure urushi (Toxicodendron vernicifluum) sap, harvested by hand incisions into the bark of lacquer trees. Applied in 50–100 coats inside humidity chambers at 75–85% RH, each coat dried 24 hours before the next. The result is a surface of optical depth unachievable by synthetic means.",
+        "steps": ["Tree sap harvesting", "Raw lacquer filtration", "Ground coat application", "Intermediate coats (×30–60)", "Final color coats", "Mirror polishing"],
+        "time": "8–16 weeks for finish alone"
+      },
+      "qian_jin": {
+        "desc": "A Tang dynasty technique in which designs are incised into a cured lacquer surface with blades as fine as 0.2mm, then gold powder or foil is pressed into the grooves. The gold is then sealed with thin urushi and polished level, leaving the design embedded beneath the surface rather than sitting on top of it.",
+        "steps": ["Design transfer to lacquer", "Groove incision with fine blade", "Gold powder / foil pressing", "Urushi seal coat", "Level sanding (×8)", "Final polish"],
+        "time": "3–6 weeks (on top of ground coat)"
+      },
+      "mother_of_pearl": {
+        "desc": "Freshwater mussel or abalone shell is cut into fragments or geometric forms using a tungsten scribe, then embedded into wet urushi at precise depths. As urushi is built up around the shell and polished flush, the iridescent surface shifts from green to violet to gold depending on the viewing angle.",
+        "steps": ["Shell selection & cutting", "Embedding in wet urushi", "Build-up coats around shell", "Level sanding (×12)", "Buffing to reveal shimmer", "Final clear seal"],
+        "time": "4–8 weeks"
+      },
+      "maki_e": {
+        "desc": "A Heian-period art form in which gold and silver powders are scattered (maki) onto wet lacquer (e = picture). A fine brush traces the design in urushi, then metallic powder is immediately applied with a blowing tool. Fixed and built up under protective layers, then revealed through polishing.",
+        "steps": ["Design rendering in wet urushi", "Powder scattering (kin/gin)", "Powder fixation coat", "Build-up and protection layers", "Reveal polishing", "Detail refinement"],
+        "time": "6–14 weeks depending on complexity"
+      }
+    },
+    "lutherieSteps": {
+      "01": {
+        "phase": "Design",
+        "desc": "Every build begins with a detailed conversation. Body dimensions, neck profile, scale length, and tonal targets are agreed before a single tool is lifted. For custom commissions, we produce technical drawings and 3D models for client approval.",
+        "detail": "Software: Fusion 360 + Rhino 3D. Output: full-scale technical drawings, 3D renders, wood grain simulation."
+      },
+      "02": {
+        "phase": "Wood Selection",
+        "desc": "Tonewoods are sourced from specialist suppliers and selected by hand from each batch. We look for consistent grain direction, appropriate density for the target tone, and absence of internal stress. All wood is kiln-dried and acclimatised in our workshop for a minimum of three months.",
+        "detail": "Moisture content target: 6–8%. Each blank is tap-tested for resonance before CNC."
+      },
+      "03": {
+        "phase": "CNC Milling",
+        "desc": "Body and neck blanks are machined on a 3-axis CNC router to within 0.1mm tolerances. The CNC handles the geometry — pockets, contours, routing paths. Everything that defines the fit and function of the instrument is established here.",
+        "detail": "Machine: Stepcraft 1100. Resolution: 0.05mm. All toolpaths verified against 3D model before run."
+      },
+      "04": {
+        "phase": "Hand Shaping",
+        "desc": "After CNC, every edge, contour, and taper is finished by hand with spokeshaves, files, and progressively finer sandpaper. The neck carve is done entirely by hand — the machine establishes the profile, but the feel of the neck is shaped by the luthier.",
+        "detail": "Sanding progression: 80 → 120 → 180 → 240 → 320 grit. Final surface prep for finish."
+      },
+      "05": {
+        "phase": "Lacquer / Finish",
+        "desc": "For standard builds, high-quality nitrocellulose is applied in 8–10 coats, cut back, and polished. For lacquer instruments, the entire urushi process begins here — occupying the majority of the total build timeline.",
+        "detail": "Standard nitro: 3–4 weeks. Urushi finishes: 8–16 weeks. All finishing done in a dedicated, humidity-controlled room."
+      },
+      "06": {
+        "phase": "Assembly",
+        "desc": "Hardware is fitted, the neck is bolted or glued, and electronics are wired. Frets are levelled, crowned, and polished. Nut slots are cut to precise string action.",
+        "detail": "Fret level check: 0.002\" feeler gauge. Nut slots: measured by string gauge + 0.002\" clearance."
+      },
+      "07": {
+        "phase": "Setup & QA",
+        "desc": "Each instrument is set up to a standard spec, then played in for a minimum of two hours before final QA. Action, intonation, pickup height, and truss rod relief are set and documented. Any issues found are resolved before sign-off.",
+        "detail": "Action at 12th fret: 1.6mm bass / 1.2mm treble (standard). Intonation: within ±1 cent."
+      },
+      "08": {
+        "phase": "Delivery",
+        "desc": "The instrument is delivered with a certificate of provenance, build diary with photographs at each stage, and a setup card documenting the final measurements. Each case is custom-fitted.",
+        "detail": "Shipping: temperature-controlled freight for international orders. Certificate signed by the lead luthier."
+      }
+    }
+  },
+  "about": {
+    "label": "About",
+    "title": "About LACQUORA"
   },
   "gallery": {
     "title": "Gallery",

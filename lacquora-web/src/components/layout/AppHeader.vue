@@ -11,11 +11,11 @@ const localeLabels: Record<Locale, string> = {
   en: 'EN', zh: '中文', fr: 'FR', de: 'DE', ja: '日本語',
 }
 
-const collectionsMenu = [
-  { label: 'Lacquer Series', labelZh: '漆艺系列', path: '/collections/lacquer-series', tag: '大漆 · 戗金 · 螺钿 · 莳绘' },
-  { label: 'Future Series', labelZh: '未来系列', path: '/collections/future-series', tag: '3D Printed · Parametric' },
-  { label: 'Master Build', labelZh: '大师定制', path: '/collections/master-build', tag: 'One-Off · Commission' },
-]
+const collectionsMenu = computed(() => [
+  { labelKey: 'collections.lacquerSeries.title', labelZh: '漆艺系列', path: '/collections/lacquer-series', tag: '大漆 · 戗金 · 螺钿 · 莳绘' },
+  { labelKey: 'collections.futureSeries.title', labelZh: '未来系列', path: '/collections/future-series', tag: '3D Printed · Parametric' },
+  { labelKey: 'collections.masterBuild.title', labelZh: '大师定制', path: '/collections/master-build', tag: 'One-Off · Commission' },
+])
 
 function navigateTo(path: string) {
   router.push(path)
@@ -81,7 +81,7 @@ function switchLocale(loc: Locale) {
                     @click="navigateTo(item.path)"
                   >
                     <div class="font-display text-base text-ivory group-hover:text-gold transition-colors duration-300 leading-tight">
-                      {{ item.label }}
+                      {{ t(item.labelKey) }}
                     </div>
                     <div class="type-label-zh text-silver/50 mt-1 text-[10px]">
                       {{ item.labelZh }}
@@ -178,7 +178,7 @@ function switchLocale(loc: Locale) {
                 @click="navigateTo(item.path)"
               >
                 <div class="font-display text-xl text-ivory group-hover:text-gold transition-colors duration-300">
-                  {{ item.label }}
+                  {{ t(item.labelKey) }}
                 </div>
                 <div class="type-label text-silver/30 mt-1">{{ item.tag }}</div>
               </button>

@@ -74,14 +74,14 @@ const collections = computed(() => [
 ])
 
 // ── Craft Process steps ──
-const craftSteps = [
-  { num: '01', en: 'Design', zh: '设计', desc: 'Concept, blueprint, 3D model' },
-  { num: '02', en: 'Material', zh: '选材', desc: 'Tonewood selection & lacquer sourcing' },
-  { num: '03', en: 'Craft', zh: '制作', desc: 'CNC precision + hand shaping' },
-  { num: '04', en: 'Lacquer', zh: '大漆', desc: '50–100 layers over weeks' },
-  { num: '05', en: 'Setup', zh: '调试', desc: 'Intonation, action, electronics' },
-  { num: '06', en: 'Delivery', zh: '交付', desc: 'Handover with certificate of provenance' },
-]
+const craftSteps = computed(() => [
+  { num: '01', en: 'Design', zh: '设计', desc: t('home.craftStep01Desc') },
+  { num: '02', en: 'Material', zh: '选材', desc: t('home.craftStep02Desc') },
+  { num: '03', en: 'Craft', zh: '制作', desc: t('home.craftStep03Desc') },
+  { num: '04', en: 'Lacquer', zh: '大漆', desc: t('home.craftStep04Desc') },
+  { num: '05', en: 'Setup', zh: '调试', desc: t('home.craftStep05Desc') },
+  { num: '06', en: 'Delivery', zh: '交付', desc: t('home.craftStep06Desc') },
+])
 
 // ── Gallery preview items ──
 const galleryItems = [
@@ -258,7 +258,7 @@ const galleryItems = [
                 {{ col.desc }}
               </p>
               <div class="btn-text text-[10px] tracking-widest" :class="col.accent">
-                Explore
+                {{ t('home.explore') }}
                 <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
               </div>
             </div>
@@ -275,16 +275,16 @@ const galleryItems = [
       <div class="absolute inset-0 bg-noise opacity-30" />
       <div class="container-site relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
         <div>
-          <span class="type-label tracking-[0.25em] text-gold/60 block mb-4">Custom Shop</span>
-          <h2 class="font-display text-4xl md:text-5xl text-ivory leading-tight">
-            Your vision.<br />Our craft.
+          <span class="type-label tracking-[0.25em] text-gold/60 block mb-4">{{ t('nav.customShop') }}</span>
+          <h2 class="font-display text-4xl md:text-5xl text-ivory leading-tight" style="white-space: pre-line">
+            {{ t('home.customShopStripTitle') }}
           </h2>
           <p class="mt-4 text-silver/50 font-light max-w-md">
-            Six steps. One instrument. Entirely yours.
+            {{ t('home.customShopStripDesc') }}
           </p>
         </div>
         <RouterLink to="/custom-shop" class="btn-primary flex-shrink-0">
-          Begin Customizing
+          {{ t('home.customShopStripCta') }}
           <span class="ml-2">→</span>
         </RouterLink>
       </div>
@@ -332,7 +332,7 @@ const galleryItems = [
 
         <div class="mt-12 text-center">
           <RouterLink to="/craftsmanship" class="btn-text">
-            Full Process
+            {{ t('home.fullProcess') }}
             <span>→</span>
           </RouterLink>
         </div>
@@ -355,7 +355,7 @@ const galleryItems = [
             <h2 class="type-section-title text-ivory">{{ t('home.galleryTitle') }}</h2>
           </div>
           <RouterLink to="/gallery" class="btn-text hidden md:flex">
-            View All Works <span>→</span>
+            {{ t('home.viewAllWorks') }} <span>→</span>
           </RouterLink>
         </div>
 
@@ -388,7 +388,7 @@ const galleryItems = [
         </div>
 
         <div class="mt-8 text-center md:hidden">
-          <RouterLink to="/gallery" class="btn-text">View All Works <span>→</span></RouterLink>
+          <RouterLink to="/gallery" class="btn-text">{{ t('home.viewAllWorks') }} <span>→</span></RouterLink>
         </div>
       </div>
     </section>

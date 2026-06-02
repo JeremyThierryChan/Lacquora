@@ -2,21 +2,21 @@
 const { t } = useI18n()
 const year = new Date().getFullYear()
 
-const footerLinks = {
+const footerLinks = computed(() => ({
   collections: [
-    { label: 'Lacquer Series', path: '/collections/lacquer-series' },
-    { label: 'Future Series', path: '/collections/future-series' },
-    { label: 'Master Build', path: '/collections/master-build' },
-    { label: 'Custom Shop', path: '/custom-shop' },
+    { label: t('collections.lacquerSeries.title'), path: '/collections/lacquer-series' },
+    { label: t('collections.futureSeries.title'), path: '/collections/future-series' },
+    { label: t('collections.masterBuild.title'), path: '/collections/master-build' },
+    { label: t('nav.customShop'), path: '/custom-shop' },
   ],
   company: [
-    { label: 'About', path: '/about' },
-    { label: 'Craftsmanship', path: '/craftsmanship' },
-    { label: 'Gallery', path: '/gallery' },
-    { label: 'Journal', path: '/journal' },
-    { label: 'Contact', path: '/contact' },
+    { label: t('nav.about'), path: '/about' },
+    { label: t('nav.craftsmanship'), path: '/craftsmanship' },
+    { label: t('nav.gallery'), path: '/gallery' },
+    { label: t('nav.journal'), path: '/journal' },
+    { label: t('nav.contact'), path: '/contact' },
   ],
-}
+}))
 </script>
 
 <template>
