@@ -4,7 +4,8 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { fileURLToPath, URL } from 'node:url'
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/Lacquora/' : '/',
   plugins: [
     vue(),
     AutoImport({
@@ -45,4 +46,4 @@ export default defineConfig({
       },
     },
   },
-})
+}))
